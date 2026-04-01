@@ -1,4 +1,4 @@
-# 🏥 Regressão Logística - Predição de Doenças Cardiovasculares
+# Regressão Logística - Predição de Doenças Cardiovasculares
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
@@ -6,7 +6,7 @@
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37726?style=for-the-badge&logo=jupyter&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 
-## 📖 Sobre o Projeto
+## Sobre o Projeto
 
 Este projeto foi desenvolvido com o objetivo de **praticar e dominar o algoritmo de Regressão Logística**, um dos métodos mais fundamentais e interpretáveis para classificação binária em Machine Learning.
 
@@ -14,7 +14,7 @@ Utilizando um dataset de características cardiovasculares, o projeto implementa
 
 A regressão logística é amplamente utilizada em contextos médicos, financeiros e de negócios por sua interpretabilidade e eficácia em problemas de classificação binária.
 
-## 🎯 Objetivos
+##  Objetivos
 
 - ✓ Compreender os fundamentos da **Regressão Logística**
 - ✓ Implementar classificação com **Scikit-Learn**
@@ -25,7 +25,7 @@ A regressão logística é amplamente utilizada em contextos médicos, financeir
 - ✓ Interpretar coeficientes e features importantes
 - ✓ Validar modelo com técnicas apropriadas
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Tecnologia | Versão | Propósito |
 |-----------|--------|----------|
@@ -37,7 +37,7 @@ A regressão logística é amplamente utilizada em contextos médicos, financeir
 | ![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?logo=seaborn&logoColor=white) | Latest | Gráficos estatísticos |
 | ![Jupyter](https://img.shields.io/badge/Jupyter-F37726?logo=jupyter&logoColor=white) | Latest | Ambiente interativo |
 
-## 📚 Conceitos-Chave
+## Conceitos-Chave
 
 ### O que é Regressão Logística?
 
@@ -50,21 +50,21 @@ Regressão Logística é um algoritmo de classificação que:
 
 ### Vantagens
 
-- 📊 **Interpretável** - Coeficientes indicam influência de cada feature
-- ⚡ **Rápido** - Eficiente computacionalmente
-- 🎯 **Probabilístico** - Fornece scores de confiança
-- 📈 **Baseline** - Excelente modelo de referência
-- 🔍 **Simples** - Fácil de implementar e debugar
+-  **Interpretável** - Coeficientes indicam influência de cada feature
+-  **Rápido** - Eficiente computacionalmente
+-  **Probabilístico** - Fornece scores de confiança
+-  **Baseline** - Excelente modelo de referência
+-  **Simples** - Fácil de implementar e debugar
 
 ### Aplicações Práticas
 
-- 🏥 Diagnóstico médico (presença/ausência de doença)
-- 💳 Aprovação de crédito (aprovado/rejeitado)
-- 📧 Detecção de spam (spam/não-spam)
-- 🎯 Churn prediction (permanece/sai)
-- 🔐 Detecção de fraude (fraude/legítimo)
+-  Diagnóstico médico (presença/ausência de doença)
+-  Aprovação de crédito (aprovado/rejeitado)
+-  Detecção de spam (spam/não-spam)
+-  Churn prediction (permanece/sai)
+-  Detecção de fraude (fraude/legítimo)
 
-## 📊 Dataset: Doenças Cardiovasculares
+##  Dataset: Doenças Cardiovasculares
 
 ### Características do Dataset
 
@@ -89,7 +89,7 @@ Regressão Logística é um algoritmo de classificação que:
 | **active** | Atividade física (0: não, 1: sim) |
 | **cardio** | Presença de doença cardiovascular (0: não, 1: sim) |
 
-## 📊 Conteúdo do Projeto
+## Conteúdo do Projeto
 
 ### Etapas Implementadas
 
@@ -131,7 +131,7 @@ Regressão Logística é um algoritmo de classificação que:
    - Matriz de Confusão
    - Curva ROC
 
-## 🚀 Como Executar
+##  Como Executar
 
 ### Pré-requisitos
 - Python 3.7+
