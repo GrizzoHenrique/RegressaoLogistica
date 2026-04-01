@@ -1,45 +1,152 @@
-# Projeto Referente a prática do Módulo 27 do curso de ciência de dados da EBAC
-**Este projeto tem como objetivo a prática do algoritimo de regressão logistica que é utilizado para prever a probabilidade de uma variável categórica**
-
-## Os Campos contidos no Dataframe são
-* age - idade dos pacientes
-
-* gender - genero (2 mulheres) (1 homens)
-
-* height - altura dos pacientes
-
-* weight - peso dos pacientes
-
-* gluc - glicose
-
-* smoke - fumante (1) não fumante (0)
-
-* alco - consume alcool (1) não consome (0)
-
-* active - realiza atividades fisicas (1) não realiza (0)
-
-* cardio_disease - tem doença cardio (1) não tem (0) - Variável target
-
-## Etapas do projeto:
-1. Importar a base que está em formato .csv
-2. Verificar os dados e se eles necessitam de tratamento como alterar o tipo ex: int para float
-3. Verificar se existem dados nulos ou faltantes
-4. Verificar se existem outliers
-5. Tratar estes outliers
-6. Realizar as análises bivariadas
-7. Plotar a matriz de correlação
-8. Separarmos o modelo em treino e teste e verificar se estão balanceados
-9. Balancear o modelo
-10. Treinar o modelo e avaliar as métricas como: coef e intercept
-11. Testar o modelo e avaliar novamente
-12. Plotar o Gráfico AUC-ROC
-
-## Tecnologias utilizadas
+# 🏥 Regressão Logística - Predição de Doenças Cardiovasculares
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=matplotlib&logoColor=black)
-![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge)
-![Plotly Express](https://img.shields.io/badge/Plotly_Express-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![Imbalanced-learn](https://img.shields.io/badge/Imbalanced--Learn-009688?style=for-the-badge)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37726?style=for-the-badge&logo=jupyter&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+
+## 📖 Sobre o Projeto
+
+Este projeto foi desenvolvido com o objetivo de **praticar e dominar o algoritmo de Regressão Logística**, um dos métodos mais fundamentais e interpretáveis para classificação binária em Machine Learning.
+
+Utilizando um dataset de características cardiovasculares, o projeto implementa um modelo de regressão logística para **prever a presença ou ausência de doenças cardiovasculares**, aplicando conceitos completos de pré-processamento, modelagem e avaliação de desempenho.
+
+A regressão logística é amplamente utilizada em contextos médicos, financeiros e de negócios por sua interpretabilidade e eficácia em problemas de classificação binária.
+
+## 🎯 Objetivos
+
+- ✓ Compreender os fundamentos da **Regressão Logística**
+- ✓ Implementar classificação com **Scikit-Learn**
+- ✓ Aplicar técnicas robustas de pré-processamento
+- ✓ Lidar com desbalanceamento de classes
+- ✓ Otimizar hiperparâmetros do modelo
+- ✓ Avaliar desempenho com múltiplas métricas
+- ✓ Interpretar coeficientes e features importantes
+- ✓ Validar modelo com técnicas apropriadas
+
+## 🛠️ Tecnologias Utilizadas
+
+| Tecnologia | Versão | Propósito |
+|-----------|--------|----------|
+| ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) | 3.7+ | Linguagem principal |
+| ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white) | Latest | Manipulação de dados |
+| ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white) | Latest | Computação numérica |
+| ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?logo=scikitlearn&logoColor=white) | Latest | Regressão Logística |
+| ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo=matplotlib&logoColor=white) | Latest | Visualizações |
+| ![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?logo=seaborn&logoColor=white) | Latest | Gráficos estatísticos |
+| ![Jupyter](https://img.shields.io/badge/Jupyter-F37726?logo=jupyter&logoColor=white) | Latest | Ambiente interativo |
+
+## 📚 Conceitos-Chave
+
+### O que é Regressão Logística?
+
+Regressão Logística é um algoritmo de classificação que:
+- Prediz a **probabilidade de pertencer a uma classe**
+- Utiliza função sigmoide para mapear valores entre 0 e 1
+- Interpreta coeficientes como impacto das features
+- Implementa limiar de decisão para classificação
+- É computacionalmente eficiente e interpretável
+
+### Vantagens
+
+- 📊 **Interpretável** - Coeficientes indicam influência de cada feature
+- ⚡ **Rápido** - Eficiente computacionalmente
+- 🎯 **Probabilístico** - Fornece scores de confiança
+- 📈 **Baseline** - Excelente modelo de referência
+- 🔍 **Simples** - Fácil de implementar e debugar
+
+### Aplicações Práticas
+
+- 🏥 Diagnóstico médico (presença/ausência de doença)
+- 💳 Aprovação de crédito (aprovado/rejeitado)
+- 📧 Detecção de spam (spam/não-spam)
+- 🎯 Churn prediction (permanece/sai)
+- 🔐 Detecção de fraude (fraude/legítimo)
+
+## 📊 Dataset: Doenças Cardiovasculares
+
+### Características do Dataset
+
+- **Tamanho**: ~70.000 registros (com e sem outliers)
+- **Variável-alvo**: Presença de doença cardiovascular (binária)
+- **Features**: 11 características fisiológicas e demográficas
+
+### Variáveis do Dataset
+
+| Feature | Descrição |
+|---------|-----------|
+| **age** | Idade em dias |
+| **gender** | Gênero (1: Mulher, 2: Homem) |
+| **height** | Altura em cm |
+| **weight** | Peso em kg |
+| **ap_hi** | Pressão arterial sistólica |
+| **ap_lo** | Pressão arterial diastólica |
+| **cholesterol** | Colesterol (0: normal, 1: acima do normal, 2: muito alto) |
+| **gluc** | Glicose (0: normal, 1: acima do normal, 2: muito alta) |
+| **smoke** | Tabagismo (0: não, 1: sim) |
+| **alco** | Consumo de álcool (0: não, 1: sim) |
+| **active** | Atividade física (0: não, 1: sim) |
+| **cardio** | Presença de doença cardiovascular (0: não, 1: sim) |
+
+## 📊 Conteúdo do Projeto
+
+### Etapas Implementadas
+
+1. **Carregamento e Exploração de Dados**
+   - Importação de dados
+   - Análise exploratória (EDA)
+   - Verificação de valores faltantes
+   - Estatísticas descritivas
+
+2. **Pré-processamento de Dados**
+   - Tratamento de outliers (com/sem outliers)
+   - Normalização/Padronização de features
+   - Criação de novas variáveis
+   - Seleção de features relevantes
+
+3. **Análise Exploratória Avançada**
+   - Distribuição de classes (balanceamento)
+   - Correlação com variável-alvo
+   - Visualizações univariadas e bivariadas
+   - Identificação de multicolinearidade
+
+4. **Construção e Treinamento do Modelo**
+   - Divisão treino/teste
+   - Treinamento da Regressão Logística
+   - Ajustes de hiperparâmetros
+   - Cross-validation
+
+5. **Interpretação e Análise**
+   - Coeficientes do modelo
+   - Importância das features
+   - Odds ratios
+   - Probabilidades preditas
+
+6. **Avaliação de Desempenho**
+   - Acurácia
+   - Precisão e Recall
+   - F1-Score
+   - ROC-AUC
+   - Matriz de Confusão
+   - Curva ROC
+
+## 🚀 Como Executar
+
+### Pré-requisitos
+- Python 3.7+
+- pip ou conda
+
+### Instalação
+
+```bash
+# Clone o repositório
+git clone https://github.com/GrizzoHenrique/RegressaoLogistica.git
+cd RegressaoLogistica
+
+# Crie um ambiente virtual (recomendado)
+python -m venv venv
+source venv/bin/activate  # No Windows: venv\Scripts\activate
+
+# Instale as dependências
+pip install -r requirements.txt
